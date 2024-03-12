@@ -9,20 +9,20 @@ helm:
       cattle:
         psp:
           enabled: false
-    #image:
-    #repository: registry.rancher.com/rancher/mirrored-banzaicloud-logging-operator
-    #images:
-    #config_reloader:
-    #repository: registry.rancher.com/rancher/mirrored-jimmidyson-configmap-reload
-    #fluentbit:
-    #repository: registry.rancher.com/rancher/mirrored-fluent-fluent-bit
-    #nodeagent_fluentbit:
-    #    os: "windows"
-    #    repository: registry.rancher.com/rancher/fluent-bit
-    #  fluentbit_debug:
-    #    repository: registry.rancher.com/rancher/mirrored-fluent-fluent-bit
-    #  fluentd:
-    #    repository: registry.rancher.com/rancher/mirrored-banzaicloud-fluentd
+    image:
+      repository: registry.rancher.com/rancher/mirrored-banzaicloud-logging-operator
+    images:
+      config_reloader:
+        repository: registry.rancher.com/rancher/mirrored-jimmidyson-configmap-reload
+      fluentbit:
+        repository: registry.rancher.com/rancher/mirrored-fluent-fluent-bit
+      nodeagent_fluentbit:
+        os: "windows"
+        repository: registry.rancher.com/rancher/fluent-bit
+      fluentbit_debug:
+        repository: registry.rancher.com/rancher/mirrored-fluent-fluent-bit
+      fluentd:
+        repository: registry.rancher.com/rancher/mirrored-banzaicloud-fluentd
 
     additionalLoggingSources:
       rke2:
