@@ -9,6 +9,6 @@ helm:
       cattle:
         psp:
           enabled: false # PSP enablement should default to false
-    #image:
-      #repository: registry.rancher.com/rancher/backup-restore-operator
+    image:
+      repository: registry.rancher.com/rancher/backup-restore-operator
   
